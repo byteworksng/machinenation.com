@@ -10,7 +10,7 @@ with open(os.path.join(here, 'CHANGES.txt')) as f:
 
 requires = [
     'pyramid',
-    'pyramid_chameleon',
+    'pyramid_jinja2',
     'pyramid_debugtoolbar',
     'pyramid_tm',
     'SQLAlchemy',
@@ -19,9 +19,9 @@ requires = [
     'waitress',
     ]
 
-setup(name='machinenation',
+setup(name='machinenation.com',
       version='0.0',
-      description='machinenation',
+      description='machinenation.com',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
         "Programming Language :: Python",
@@ -29,14 +29,14 @@ setup(name='machinenation',
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
         ],
-      author='',
-      author_email='',
-      url='',
+      author='Byteworks',
+      author_email='contact@byteworksng.com',
+      url='http://www.byteworksng.com',
       keywords='web wsgi bfg pylons pyramid',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
-      test_suite='machinenation',
+      test_suite='machinenation.com',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
